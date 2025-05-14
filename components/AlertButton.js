@@ -1,5 +1,5 @@
 import React from "react";
-import { Alert,Pressable, Text, StyleSheet } from "react-native";
+import { Alert,Pressable, Text, StyleSheet, ScrollView } from "react-native";
 
 const AlertButton = ({message, children}) => {
     const handlePress = () => {
@@ -13,6 +13,9 @@ const AlertButton = ({message, children}) => {
     );
 };
 const styles = StyleSheet.create({
+  container: {
+    flex:1
+  },
   button: {
     backgroundColor: '#4682B4',
     paddingVertical: 12,

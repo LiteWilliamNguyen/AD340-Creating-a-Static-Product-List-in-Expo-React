@@ -2,12 +2,14 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
 import ProductList from './components/ProductList';
 import Toolbar from './components/Toolbar';
+import DynamicToolbar from './components/DynamicToolbar';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <ProductList/>
       <Toolbar />
+      <DynamicToolbar />
     </View>
   );
 }
